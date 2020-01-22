@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    width: 85%;
+    margin: 50px auto 30px;
+    background-image: url(/Img/Rectangle-map.svg);
+    background-size: contain;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.lil {
+    width: 70%;
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: .05rem;
+    line-height: 1.2rem;
+}
+
+.blue {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #1da1f2 !important;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    letter-spacing: .09rem;
+    margin: 40px;
+}
+
+#talk {
+    margin-bottom: 40px;
+}
+
+img {
+    width: 100%;
+}
+
+#year {
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.small {
+    width: 80%;
+    margin: 30px  auto;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    line-height: 1.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+h2 {
+    margin-bottom: 40px;
+}
+
+.stories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+}
+
+a:hover {
+    opacity: .5;
+}
+
+#share {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        width: 70%;
+        margin: 80px auto 50px;
+    }
+
+    header h1 {
+        font-size: 72px;
+        margin-bottom: 40px;
+    }
+
+    .lil {
+        width: 40%;
+        margin: 0 auto;
+        font-size: 20px;
+        line-height: 2rem;
+    }
+
+    #blue {
+        font-size: 16px;
+        padding: 20px 50px;
+        margin: 60px;
+    }
+
+    .one {
+        margin: 40px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .left {
+        width: 50%;
+        text-align: start;
+    }
+
+    .small {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #year {
+        width: 100%;
+        margin: 0;
+    }
+
+    .hidden {
+        display: block;
+    }
+
+    h2 {
+        margin-bottom: 80px;
+    }
+
+    .stories {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+    }
+
+    .ok {
+        margin-top: 20px;
+    }
+
+    .read {
+        margin-bottom: 20px;
+    }
+
+    #share {
+        margin: 20px 0;
+    }
+
+    .share a {
+        margin-bottom: 50px;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        font-size: 12px;
+    }
+}
