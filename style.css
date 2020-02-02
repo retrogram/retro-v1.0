@@ -16,6 +16,7 @@ body {
     width: 85%;
     margin: 50px auto 30px;
     background-image: url(/Img/Rectangle-map.svg);
+    background-color: yellow;
     background-size: contain;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
