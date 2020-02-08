@@ -15,8 +15,7 @@ html, body {
 body {
     width: 85%;
     margin: 50px auto 30px;
-    background-image: url(/Img/Rectangle-map.svg);
-    background-color: yellow;
+    background-image: url(/Img/Rectangle-map.png);
     background-size: contain;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
@@ -58,7 +57,7 @@ img {
 }
 
 #year {
-    width: 80%;
+    width: 60%;
     margin-bottom: 50px;
 }
 
@@ -78,10 +77,22 @@ h2 {
     margin-bottom: 40px;
 }
 
-.stories {
+#stories {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 30px;
+    max-height: 450px;
+    overflow: hidden;
+    -webkit-transition: max-height 0.7s;
+    -moz-transition: max-height 0.7s;
+    transition: max-height 0.7s;
+}
+
+#stories.open {
+    max-height: 3000px;
+    -webkit-transition: max-height 0.7s;
+    -moz-transition: max-height 0.7s;
+    transition: max-height 0.7s;
 }
 
 a {
@@ -139,6 +150,7 @@ a:hover {
 
     .left {
         width: 50%;
+        margin-right: 3rem;
         text-align: start;
     }
 
@@ -160,9 +172,11 @@ a:hover {
         margin-bottom: 80px;
     }
 
-    .stories {
+    #stories {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 40px;
+        max-height: 370px;
     }
 
     .ok {
