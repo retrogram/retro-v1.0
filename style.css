@@ -53,7 +53,9 @@ header h1 {
 }
 
 img {
-    width: 100%;
+    width: 125px;
+    height: 120px;
+    padding-bottom: 10px;
 }
 
 #year {
@@ -80,7 +82,8 @@ h2 {
 #stories {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
+    -ms-grid-columns: 1fr 1fr;
+    grid-gap: 20px;
     max-height: 450px;
     overflow: hidden;
     -webkit-transition: max-height 0.7s;
@@ -96,7 +99,7 @@ h2 {
 }
 
 a {
-    display: inline-block;
+    display: block;
     text-decoration: none;
     color: #000000;
     cursor: pointer;
@@ -104,6 +107,11 @@ a {
 
 a:hover {
     opacity: .5;
+}
+
+.okay {
+    font-weight: bolder;
+    padding-top: 10px;
 }
 
 #share {
@@ -117,7 +125,7 @@ a:hover {
     font-size: 12px;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 750px) {
     body {
         width: 70%;
         margin: 80px auto 50px;
@@ -175,12 +183,18 @@ a:hover {
     #stories {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        -ms-grid-columns: 1fr 1fr 1fr;
         grid-gap: 40px;
         max-height: 370px;
     }
 
-    .ok {
-        margin-top: 20px;
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    #click {
+        display: inline-block;
     }
 
     .read {
